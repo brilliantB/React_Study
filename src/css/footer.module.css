@@ -1,0 +1,19 @@
+.footer{
+	background:#000000;
+	position:absolute;
+	bottom:0;
+	/* position:absolute; position:fixed; => width는 자식요소를 기준으로 맞춰지는 성질로 변경됨 */
+	width: 100%;
+}
+
+.section{
+	max-width: 540px;
+	margin:0 auto;
+	padding: 5px 30px;
+	font-size: 12px;
+	color:#999999;
+}
+
+.section>div{
+	margin:20px 0;
+}
