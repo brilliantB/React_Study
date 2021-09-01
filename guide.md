@@ -5,6 +5,7 @@
 - src : html 파일에 반영되는(렌더링) 콘텐츠, 기능이 구현되어 있는 파일들이 저장되어 있는 폴더
 - index.html <= index.js <= App.js(component)
 
+
 ## React 
 
 - 공식 문서 : http://ko.reactjs.org/
@@ -41,10 +42,21 @@
 ### Todo Markup
 https://dev.to/hariramjp777/todo-app-using-html-css-and-js-local-storage-design-html-and-css-1m0j
 
+### Todo Component
+- header
+- main
+    - todo-list
+        - todo-item
+    - status
+- footer
+
 ### React에서 CSS를 작성/사용하는 방식
 - App.css에 전체 css를 구성하고 전역으로 사용하는 방식
 - module css 방식 : css를 하나로 구성하지 않고 component 별로 구성
     - component와 css 파일이 분리되어 있음
+    - 작성 방법
+        - 폰트 설정, reset css 등은 App.css에 전역으로 사용
+        - 하나의 요소를 선택해서 css를 적용한 경우 module css로 활용 
 - styled-component : 스타일링 된 컴포넌트 => component별로 css를 구성
     - 인라인 방식처럼 사용 => component 파일에 css, component contents 같이 작성
     - Internal 방식으로 렌더링 됨 
