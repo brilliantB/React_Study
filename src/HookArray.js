@@ -1,15 +1,22 @@
-function ListItem({ value }){
-    return(
-    <li>{value.name} : {value.color}</li>
+function ListItem({car, removeText}){
+    return( 
+        <li>
+            <span>{car.carname} : {car.color}</span>
+            <button type="button" onClick={
+                function(){
+                    return(removeText(car.id));}    
+            }>
+            삭제</button>
+        </li>
     );
 }
 
-function HookArray({ carArray }){
+function HookArray({carArray, removeText}){
     return(
         <ul>
-            {carArray.map((car) => {
-                return <ListItem value={car} key={car.id} />;
-            })}
+            {carArray.map(function(car){
+            return<ListItem car={car} key={car.id} removeText={removeText} />;
+        })}
         </ul>
     );
 }
